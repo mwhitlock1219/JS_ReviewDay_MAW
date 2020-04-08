@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Make it Red Exercise 4_8_20</title>
+</head>
+
+<body>
+
+	<h1>Make it Red Exercise</h1>
+
+	<h3>Instructions</h3>
+
+	<p>Paragraph 1: Create a web page with half a dozen paragraphs on it. </p>
+	<p>Paragraph 2: Add a click handler. When you click a paragraph it goes red.</p>
+
+	<h3>Steps taken to solve Exercise</h3>
+
+	<p>Paragraph 3: Use jQuery to select the paragraph element.</p>
+	<p>Paragraph 4: Use the .click() </p>
+	<p>Paragraph 5: Add a function inside .click() to change color if text when it is clicked</p>
+	<p>Paragraph 6: Click on each paragraph to change it's text color.</p>	
+	
+		
+	<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+	<script>
+		$('p').click(function(event){
+			$(event.target).css('color', 'red');
+		});
+		
+	</script>
+</body>
+</html>

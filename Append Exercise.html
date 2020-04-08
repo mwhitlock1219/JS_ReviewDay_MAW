@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Append Exercise 4_8_20</title>
+</head>
+
+<body>
+
+	<h1>Append Exercise</h1>
+
+	<p> 1. Use jQuery to select the body element. </p>
+	<p> 2. Use the .append() function to append a new hyperlink. </p>
+	<p> 3. Use the .attr() function to set an href attribute on the hyperlink. Open it in your DOM and check it's clickable </p>
+	
+		
+	<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+	
+	<script>
+		$('body').append("<a href='https://google.com'> Google </a>");
+		// OR
+
+		$('body').append('<a>Google</a>');
+		$('a').attr('href', 'https://google.com');
+
+
+	</script>
+</body>
+</html>

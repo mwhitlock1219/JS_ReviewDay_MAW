@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Keyup Exercise 4_8_20</title>
+</head>
+
+<body>
+	<div>
+		<h1>Keyup Exercise</h1>
+
+		<p> 1. Create a text input field. Listen for the keyup event. Alert the value of the text box whenever keyup occurs.</p>
+		<p> 2. Get the value of an input field using: $('input').val();</p>
+		<p> 3. For bonus points, append the value of the text box into a div. </p>
+	</div>
+	<!-- Create a text input field -->
+	<input type='text' class='target'>
+	
+	<div class= 'myDiv'></div>
+	
+		
+	<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<!-- Add listen for keyup event and alert value when keyup occurs -->
+	<script>
+		$('.target').keyup(function(){
+			alert($('input').val()) 
+
+		});
+
+		
+
+	</script>
+
+
+
+<!-- Trying to append value of textbox into div with class='myDiv'
+
+function text(){
+			const content = $('input').val()
+			$('.myDiv').append('<p>'+ content +'</p>');
+			$('input').val()
+		}
+ -->
+
+
+</body>
+</html>
