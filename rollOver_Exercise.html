@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Roll Over Exercise 4_9_20</title>
+</head>
+
+<body>
+	<div >
+		<h1>Roll Over Exercise</h1>
+	</div>
+
+	<div>
+		<p> 1. Review the list of events on: http://api.jquery.com/category/events/</p>
+		<p> 2. Create code that listens for a hover event. When the user rolls over a div, place the word "over" in that div.</p>
+		<p> 3. When the user mouses out of the div, place the word "out" in the div. </p>
+	</div>
+	
+		
+	<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+	
+	<script>
+
+		$('div').on("mouseenter", function(){
+
+		//$(this).find( "span" ).last().remove(); also works
+			$(this).find( "span" ).remove();
+			$(this).append( $("<span> over </span>"));
+	
+		}).on("mouseleave", function(){
+		
+			$(this).find( "span" ).remove();
+			$(this).append("<span> out </span>");
+		})
+
+////////////////////// using hover instead //////////////////////////
+		$('div').hover(function(){
+			$(this).append($('<span> over </span>'));
+		}, function(){
+			$( this ).find('span').last().remove();
+		});
+
+
+
+
+
+    </script>
+
+<!-- 	
+
+.hover()
+Bind one or two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.
+
+.mouseout()
+Bind an event handler to the “mouseout” JavaScript event, or trigger that event on an element.
+
+.mouseover()
+Bind an event handler to the “mouseover” JavaScript event, or trigger that event on an element.
+
+.mouseleave()
+Bind an event handler to be fired when the mouse leaves an element, or trigger that handler on an element.
+
+.mouseenter()
+Bind an event handler to be fired when the mouse enters an element, or trigger that handler on an element.	 -->
+
+	
+</body>
+</html>
